@@ -8,6 +8,7 @@
 body {
     font-family: "Lato", sans-serif;
     display: flex;
+    height: 100%;
     transition: background-color .5s;
     background-color: #ffffff;
     overflow-x: hidden;
@@ -61,13 +62,17 @@ body {
 .sidenavdivitems {
     padding: 0 15px 0 15px;
 }
-.navlinks,.navarticale {
+.navlinks,.navarticale,.getintouch,.copyrightnav {
     padding: 45px 0 30px 0;
+}
+.getintouch h3 {
+    padding-bottom: 38px;
 }
 .navlinks h3 {
     padding-bottom: 30px;
     position: relative;
 }
+
 .navlinks h3::after {
     content: "";
     position: absolute;
@@ -76,6 +81,21 @@ body {
     width: 70px;
     height: 4px;
     background-color: #f66a6c;
+}
+h3 {
+    position: relative;
+}
+.getintouch h3::after {
+    content: "";
+    position: absolute;
+    top: 35px;
+    left: 0;
+    width: 120px;
+    height: 4px;
+    background-color: #f66a6c;
+}
+.getintouch p {
+    padding-top: 40px;
 }
 .sidenav a {
     /* border-bottom: 1px solid #9fa3a6; */
@@ -93,6 +113,21 @@ body {
 .navart {
     /* background-position: center; */
     object-fit: contain;
+}
+.fa ,.fas {
+    color: #f66a6c;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* width: 100%; */
+    height: 100%;
+    margin-right: 17px;
+    /* width: 30px; */
+}
+.getintouch > p {
+    display: flex;
+    flex-direction: row;
+    padding: 18px 0 18px 0;
+    /* padding-left: 10px; */
 }
 
 .topmenu button {
@@ -143,23 +178,15 @@ body {
     /* margin: 40px 0 40px 0; */
 }
 .s1heading {
-    /* padding-right: 100px; */
     padding: 0 200px 20px 0;
     font-size: 23px;
     color: #3d4449;
     
 }
-.s1text p > span, .s1text p,.navart p {
-    /* color: blue; */
-    padding: 0 60px 23px 0;
-    /* font-family: "Open Sans", sans-serif; */
-    color: #80888d;
-}
-.s1text p,.navart p {
+p {
+    padding: 18px 10px 18px 0;
     font-family: "Open Sans", sans-serif;
-}
-.navart p {
-    padding: 15px 0 15px 0;
+    color: #80888d;
 }
 .s1text button {
     width: 137px;
