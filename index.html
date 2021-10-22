@@ -15,8 +15,8 @@
     <title>Landing Page</title>
 </head>
 <body>
-
-    <div class="sidenav">
+    <div class="body">
+        <div class="sidenav">
             <div class="topmenu">
                 <button id="navbutton" onclick="navFunction()"><i class="fas fa-bars"></i></button>
             </div> 
@@ -98,11 +98,11 @@
                 <i class="fab fa-medium-m"></i>
             </div>
         </div>    
-        <hr>
+        <!-- <hr> -->
         <sction class="section1">
             <header class="s1textdiv">
                 <div class="s1heading">
-                    <h1>Hi, I'm Editorial <br>by HTML5 UP</h1>
+                    <h1>Hi, I'm Editorial by HTML5 UP</h1>
                 </div>
                 <div class="s1text">
                     <p><span>A FREE AND FULLY RESPONSIVE SITE TEMPLATE</span></p>
@@ -127,49 +127,49 @@
             <div class="s2div1">
                 <div class="productdiv">
                     <i class="fa fa-diamond" aria-hidden="true"></i>
-                    <div class="producttext">
-                        <h3>Portitor ullamcorper</h3>
-                        <P class="paragraph">Aenean ornare velit lacus, ac varius enim lorem
-                            ullamcorper dolore. Proin aliquam facilisis ante
-                            interdum. Sed nulla amet lorem feugiat tempus
-                            aliquam.
-                        </P>
-                    </div>
+                </div>    
+                <div class="producttext">
+                    <h3>Portitor ullamcorper</h3>
+                    <P class="paragraph">Aenean ornare velit lacus, ac varius enim lorem
+                        ullamcorper dolore. Proin aliquam facilisis ante
+                        interdum. Sed nulla amet lorem feugiat tempus
+                        aliquam.
+                    </P>
                 </div>
                 <div class="productdiv">
                     <i class="fas fa-paper-plane"></i>
-                    <div class="producttext">
-                        <h3>Sapien veroeros</h3>
-                        <P class="paragraph">Aenean ornare velit lacus, ac varius enim lorem
-                            ullamcorper dolore. Proin aliquam facilisis ante    
-                            interdum. Sed nulla amet lorem feugiat tempus
-                            aliquam..
-                        </P>
-                    </div>
+                </div>
+                <div class="producttext">
+                    <h3>Sapien veroeros</h3>
+                    <P class="paragraph">Aenean ornare velit lacus, ac varius enim lorem
+                        ullamcorper dolore. Proin aliquam facilisis ante    
+                        interdum. Sed nulla amet lorem feugiat tempus
+                        aliquam..
+                    </P>
                 </div>
             </div>
             <div class="s2div2">
                 <div class="productdiv">
                     <i class="fas fa-rocket"></i>
-                    <div class="producttext">
-                        <h3>Quam lorem ipsum</h3>
-                        <P class="paragraph">Aenean ornare velit lacus, ac varius enim lorem
-                            ullamcorper dolore. Proin aliquam facilisis ante    
-                            interdum. Sed nulla amet lorem feugiat tempus
-                            aliquam. <br>
-                        </P>
-                        
-                    </div>
+                </div>
+                <div class="producttext">
+                    <h3>Quam lorem ipsum</h3>
+                    <P class="paragraph">Aenean ornare velit lacus, ac varius enim lorem
+                        ullamcorper dolore. Proin aliquam facilisis ante    
+                        interdum. Sed nulla amet lorem feugiat tempus
+                        aliquam. <br>
+                    </P>  
+                </div>
                 <div class="productdiv">
                     <i class="fas fa-signal"></i>
-                    <div class="producttext">
-                        <h3>Sed magna finibus</h3>
-                        <P class="paragraph">Aenean ornare velit lacus, ac varius enim lorem
-                            ullamcorper dolore. Proin aliquam facilisis ante
-                            interdum. Sed nulla amet lorem feugiat tempus
-                            aliquam.
-                        </P>
-                    </div>
+                </div>
+                <div class="producttext">
+                    <h3>Sed magna finibus</h3>
+                    <P class="paragraph">Aenean ornare velit lacus, ac varius enim lorem
+                        ullamcorper dolore. Proin aliquam facilisis ante
+                        interdum. Sed nulla amet lorem feugiat tempus
+                        aliquam.
+                    </P>
                 </div>
             </div>
         </section>
@@ -238,23 +238,37 @@
             </div>
         </article>     
     </div>
+
+    </div>
     <script>
         function navFunction() 
         {
             var x = document.getElementById("mySidenav");
             var y = document.getElementById("main");
-            var z = document.getElementById("navbutton");
+            // var z = document.getElementById("navbutton");
+            var z = document.getElementsByClassName("topmenu");
+            // alert(z)
+            let intViewportWidth = window.innerWidth;
+            // alert(intViewportWidth<600)
             if (x.style.display === "flex") 
             {
                 x.style.display = "none";
-                // y.style.paddingLeft= "3.5rem"
-                // z.style.left = "1.125rem";
+                // if(intViewportWidth<600)
+                // {
+                //     // alert("Hello");
+                //     z.style.Left = "20px";
+                //     alert(intViewportWidth);
+                // }  
             } 
             else 
             {
                 x.style.display = "flex";
-                // y.style.paddingLeft= "21.625rem";
-                // z.style.left = "19.25rem";
+                // if (intViewportWidth<600)
+                // {
+                //     // alert("HEllow");
+                //     z.style.Left = "300px";
+                //     alert(intViewportWidth);
+                // }
             }
         }
     </script>

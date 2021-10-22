@@ -13,9 +13,14 @@ body {
     background-color: #ffffff;
     overflow-x: hidden;
   }
+  .body {
+      display: flex;
+      padding-bottom: 0;
+
+  }
   /* Side Navigation bar */
   .sidenav {
-    height: 100%;
+    /* height: 100%; */
     display: flex;
     flex-direction: row-reverse;
     /* position: relative; */
@@ -131,7 +136,7 @@ h3 {
 }
 
 .topmenu button {
-    padding: 20px 0 0 20px;
+    padding: 15px 0 0 15px;
     color: #f66a6c;
     outline: none;
     border: none;
@@ -144,7 +149,7 @@ h3 {
   
   #main {
     transition: padding-left .5s;
-    padding: 3.5rem;
+    padding: 3.5rem 3.5rem 3.5rem 0;
   }
   
 
@@ -244,7 +249,7 @@ h2 {
     position: relative;
 }
 .productdiv > i  {
- width: 430px;
+ width: 200px;
  color: #f66a6c;
  top: 45px;
  left: 40px;
@@ -332,4 +337,106 @@ h2 {
     margin-bottom: 30px;
     
 }
+bold {
+    font-weight: bolder;
+    color: #3d4449;
 
+}
+.editorialtext p {
+    font-family: 'Roboto Slab', serif;
+}
+
+@media only screen and (max-width: 700px) {
+    .sidenav{
+        position: absolute;
+        z-index: 1000;
+    }
+    .topmenu {
+        /* opacity: 0.7; */
+        /* padding: 0; */
+    }
+    #navbutton {
+        /* padding: 20px; */
+        font-size: 20px;
+        /* background-color: blue; */
+        /* border-radius: 5px; */
+    }
+    .fa-bars {
+        color: #848b90;
+        background-color: #e7e8ea;
+        padding: 10px 18px 10px 18px;
+        border-radius: 5px;
+    }
+    .section1 {
+        flex-direction: column-reverse;
+        padding-top: 40px;
+    }
+    .section2 {
+        margin-bottom: 40px;
+    }
+    .s1div3 img {
+        object-fit: cover;
+        width: 100%;
+    }
+    .s2div1, .s2div2, .section2 {
+        flex-direction: column;
+        padding: 0;
+    }
+    #main {
+        padding: 30px;
+
+    }
+    .productdiv {
+        width: auto;
+        height: 120px;
+    }
+    .productdiv > i {
+        font-size: 23px;
+    }
+    .fa-diamond::after, .fa-paper-plane::after,.fa-rocket::after,.fa-signal::after {
+        width: 45px;
+        height: 45px;
+        top: -13px;
+        left: -12px;
+    }
+    .articlediv1, .articlediv2,.articlediv3 {
+        flex-direction: column;
+        /* padding: 0; */
+    }
+    .art1,.art3,.art5 {
+        padding: 0;
+        border-right: none;
+        padding-top: 35px;
+        border-bottom: 1px solid #80888d80;
+    }
+    .art2,.art4,.art6 {
+        padding: 0;
+        padding-top: 35px;
+        border-bottom: 1px solid #80888d80;
+    }
+    .art6 {
+        border: none;
+    }
+    .s1heading {
+        padding: 0;
+    }
+    h1 {
+        font-size: 28px;
+        padding-top: 30px;
+    }
+    .socialicon i {
+        letter-spacing: 5px;
+    }
+    .topbar {
+        height: 100px;
+    }
+    .editorialtext {
+        display: flex;
+    }
+    .editorialtext p {
+        padding: 50px 0 0 0;
+    }
+    .topbar::after {
+        top: 80px;
+    }
+  }
