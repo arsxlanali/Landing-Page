@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    /* border: 1px solid black; */
     font-family: 'Roboto Slab', serif;
 }
 
@@ -20,13 +19,10 @@ body {
   }
   /* Side Navigation bar */
   .sidenav {
-    /* height: 100%; */
     display: flex;
     flex-direction: row-reverse;
-    /* position: relative; */
     top: 0;
     left: 0;
-    /* overflow-x: hidden; */
     transition: 0.5s;
   }
   img {
@@ -54,6 +50,9 @@ body {
     border-radius: 5px;
     outline: none;
     border: 1px solid #9fa3a6;
+}
+.search-container input[type="search"]::-webkit-search-cancel-button{
+    display: none;
 }
 .search-container i {
     position: relative;
@@ -116,23 +115,17 @@ h3 {
   }
 
 .navart {
-    /* background-position: center; */
     object-fit: contain;
 }
 .fa ,.fas {
     color: #f66a6c;
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* width: 100%; */
     height: 100%;
     margin-right: 17px;
-    /* width: 30px; */
 }
 .getintouch > p {
     display: flex;
     flex-direction: row;
     padding: 18px 0 18px 0;
-    /* padding-left: 10px; */
 }
 
 .topmenu button {
@@ -205,12 +198,8 @@ p {
     text-decoration: none;
     color: #f74a4d;
 }
-/* .s1textdiv {
-    margin: 20px;
-} */
 .s1div3 {
     width: auto;
-    /* object-fit: fill; */
 }
 .s1div3 img {
     object-fit: contain;
@@ -283,9 +272,6 @@ h2 {
 
 
 /* Atricle Section  */
-/* h3 {
-    padding-bottom: 25px;
-} */
 .articalesection {
     position: relative;
 }
@@ -346,20 +332,13 @@ bold {
     font-family: 'Roboto Slab', serif;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
     .sidenav{
         position: absolute;
         z-index: 1000;
     }
-    .topmenu {
-        /* opacity: 0.7; */
-        /* padding: 0; */
-    }
     #navbutton {
-        /* padding: 20px; */
         font-size: 20px;
-        /* background-color: blue; */
-        /* border-radius: 5px; */
     }
     .fa-bars {
         color: #848b90;
@@ -401,7 +380,6 @@ bold {
     }
     .articlediv1, .articlediv2,.articlediv3 {
         flex-direction: column;
-        /* padding: 0; */
     }
     .art1,.art3,.art5 {
         padding: 0;
